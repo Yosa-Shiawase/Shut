@@ -139,7 +139,7 @@ export function Hero() {
           transition={{ type: "spring", stiffness: 200, damping: 11, delay: 0.85 }}
           className="stamp absolute -right-5 -top-9 px-3 py-1 text-lg font-bold md:-right-16 md:-top-7 md:text-xl"
         >
-          27 frames
+          38 frames
           <br />
           no filters
         </motion.div>
@@ -270,7 +270,7 @@ export function GallerySection({
     <section id="gallery" aria-label="gallery" className="relative scroll-mt-24 px-5 py-24">
       <div className="mx-auto max-w-6xl">
         <SectionHead
-          overline="№ 27 frames — sorted, titled, stamped"
+          overline="№ 38 frames — sorted, titled, stamped"
           title="Field Notes"
           note={
             <p className="max-w-[240px] text-center font-hand text-xl leading-tight text-ink-soft -rotate-2">
@@ -391,7 +391,7 @@ export function AboutSection() {
               on the first pass. Currently leveling into a cyber analyst.
             </p>
             <p className="mt-4 font-body text-lg italic leading-relaxed text-ink-soft">
-              This sketchbook is the side door into that life: 27 stills pulled from the
+              This sketchbook is the side door into that life: 38 stills pulled from the
               Shut repository — robins on peeling walls, stolen chocolate, rain-washed
               courtyards, unfinished buildings — each one titled and stamped instead of
               left with a camera filename.

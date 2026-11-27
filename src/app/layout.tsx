@@ -23,7 +23,7 @@ const mono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SHUT — a sketchbook of stills by Yosa Shiawase",
   description:
-    "Portfolio of Yosa Shiawase: 27 frames, ink-stained field notes, skill trees and summoning circles. Committed in the dead of night.",
+    "Portfolio of Yosa Shiawase: 38 frames, ink-stained field notes, skill trees and summoning circles. Committed in the dead of night.",
   keywords: ["Yosa Shiawase", "portfolio", "photography", "sketchbook", "ink"],
   authors: [{ name: "Yosa Shiawase" }],
   openGraph: {

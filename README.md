@@ -1,6 +1,6 @@
 # SHUT — a sketchbook of stills
 
-Portfolio of **Yosa Shiawase**: 27 frames, ink-stained field notes, skill trees
+Portfolio of **Yosa Shiawase**: 38 frames, ink-stained field notes, skill trees
 and summoning circles. Committed in the dead of night.
 
 Built with **Next.js 16 + React 19 + Tailwind CSS 4 + Framer Motion**.
@@ -70,10 +70,10 @@ src/
   app/                 layout (fonts + metadata), page, favicon
   components/ink/      background (animated SVG scene), photo-card,
                        lightbox, sections (hero / gallery / about / footer)
-  lib/gallery.ts       all 27 shots: slug, title, description, tags,
+  lib/gallery.ts       all 38 shots: slug, title, description, tags,
                        original filename as provenance
 public/
-  gallery/web/         the 27 optimized frames (≤1600px, ~5 MB total)
+  gallery/web/         the 38 optimized frames (≤1600px, ~7 MB total)
 ```
 
 `npm run build` writes the deployable static site to `out/` (gitignored).

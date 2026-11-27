@@ -28,6 +28,22 @@ export const SHOTS: Shot[] = [
     tag: "FLORA",
   },
   {
+    slug: "the-same-tree-twice",
+    file: "IMG_20261127_141339_121.jpg",
+    title: "The Same Tree, Twice",
+    description:
+      "Shot through glass, so the sky got a vote: white bark, red-tipped branches, and a reflection insisting on being in the portrait too.",
+    tag: "FLORA",
+  },
+  {
+    slug: "after-curfew-blooms",
+    file: "IMG_20261127_141337_079.jpg",
+    title: "After-Curfew Blooms",
+    description:
+      "Coral blossoms on a branch that refuses to sleep, one stray light bleeding in from the edge. The tree signed it in red; I just held the camera.",
+    tag: "FLORA",
+  },
+  {
     slug: "venice-second-hand",
     file: "IMG-20260217-WA0006.jpg",
     title: "Venice, Second Hand",
@@ -76,6 +92,14 @@ export const SHOTS: Shot[] = [
     tag: "FLORA",
   },
   {
+    slug: "the-streetlights-garden",
+    file: "IMG_20261127_141632_899.jpg",
+    title: "The Streetlight's Garden",
+    description:
+      "A lamp pouring itself into the neem leaves after everyone went inside. Best-lit garden in the colony, open only after dark.",
+    tag: "FLORA",
+  },
+  {
     slug: "tenant-of-the-peeling-wall",
     file: "IMG_20251222_122808_119.jpg",
     title: "Tenant of the Peeling Wall",
@@ -121,6 +145,38 @@ export const SHOTS: Shot[] = [
     title: "The Chocolate Heist",
     description:
       "A palm squirrel, caught mid-crime with someone's chocolate bar. No regrets were detected at the scene.",
+    tag: "FAUNA",
+  },
+  {
+    slug: "the-tribute-collector",
+    file: "IMG_20261127_141533_543.jpg",
+    title: "The Tribute Collector",
+    description:
+      "Golden hour found the neighbourhood cat stationed on its ledge, accepting admiration as rent — eyes open just long enough to confirm payment.",
+    tag: "FAUNA",
+  },
+  {
+    slug: "professional-peekaboo",
+    file: "IMG_20261127_141605_723.jpg",
+    title: "Peek-a-Boo, Professional Tier",
+    description:
+      "A ginger face surfacing from the oleander just to check who's taking notes. The water tank was in on it the whole time.",
+    tag: "FAUNA",
+  },
+  {
+    slug: "warden-of-the-boundary-wall",
+    file: "IMG_20261127_141610_312.jpg",
+    title: "Warden of the Boundary Wall",
+    description:
+      "Curled along the top of the wall with the neighbourhood on low volume behind — flag, wires, rooftops. Borders don't patrol themselves, but they do nap.",
+    tag: "FAUNA",
+  },
+  {
+    slug: "same-wall-different-grammar",
+    file: "IMG_20261127_141616_430.jpg",
+    title: "Same Wall, Different Grammar",
+    description:
+      "The diagonal cut turns the wall into a sentence that ends in sky. Same cat, same shift — the camera just leaned.",
     tag: "FAUNA",
   },
   {
@@ -188,6 +244,22 @@ export const SHOTS: Shot[] = [
     tag: "SKY",
   },
   {
+    slug: "the-long-exhale",
+    file: "IMG_20261127_141528_335.jpg",
+    title: "The Long Exhale",
+    description:
+      "Streaked clouds over a town holding still at the bottom of the frame. The sky took a deep breath and let it out slowly.",
+    tag: "SKY",
+  },
+  {
+    slug: "nebula-on-layaway",
+    file: "IMG_20261127_141451_923.jpg",
+    title: "A Nebula on Layaway",
+    description:
+      "One cloud doing its best deep-space impression over the rooftops. Give it a few million years and better equipment — it'll get there.",
+    tag: "SKY",
+  },
+  {
     slug: "both-eyes-open",
     file: "IMG_20260723_115257_598~2.jpg",
     title: "Both Eyes Open",
@@ -225,6 +297,22 @@ export const SHOTS: Shot[] = [
     title: "Inside the Skeleton",
     description:
       "Pillars, rubble, and light leaking through the window holes of a building that isn't done thinking yet.",
+    tag: "STRUCTURE",
+  },
+  {
+    slug: "downtown-briefly-blue",
+    file: "IMG_20261127_141732_136.jpg",
+    title: "Downtown, Briefly Blue",
+    description:
+      "The mall block at blue hour: billboards waiting for their audience, a water tower standing in for a castle. For a minute the whole skyline agreed on a colour.",
+    tag: "STRUCTURE",
+  },
+  {
+    slug: "night-shift-at-the-plaza",
+    file: "IMG_20261127_141737_637.jpg",
+    title: "Night Shift at the Plaza",
+    description:
+      "The only storefront still talking after dark, its glow spilling across the pavers. Everyone walking past is headed somewhere warmer — or exactly here.",
     tag: "STRUCTURE",
   },
 ];
