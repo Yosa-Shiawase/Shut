@@ -44,23 +44,24 @@ reject a non-fast-forward push. Two options:
 
 ## Deploy on Render
 
-**Easiest (Blueprint):** Render Dashboard → **New → Blueprint** → pick the repo.
-Render reads `render.yaml` and pre-fills everything.
+**Recommended — Static Site** (never sleeps on the free plan, unlimited
+bandwidth): Render Dashboard → **New → Static Site** → pick the repo →
 
-**Manual:** Render Dashboard → **New → Web Service** → pick the repo →
+| Setting           | Value                     |
+| ----------------- | ------------------------- |
+| Build Command     | `npm ci && npm run build` |
+| Publish Directory | `out`                     |
+| Node version      | auto-read from `.node-version` |
 
-| Setting       | Value                    |
-| ------------- | ------------------------ |
-| Runtime       | Node                     |
-| Build Command | `npm ci && npm run build`|
-| Start Command | `npm run start`          |
-| Node version  | 22 (auto-read from `.node-version`) |
+Or use **New → Blueprint** — Render reads `render.yaml` and pre-fills all of it.
 
-Free plan works fine. First build takes ~2–3 min (Next.js compiles, then
-prerenders the single page). You get a `https://<name>.onrender.com` URL.
+**Alternative — Node Web Service:** remove the `output: "export"` line from
+`next.config.ts`, create a Web Service (Node) with build
+`npm ci && npm run build` and start `npm run start` (no publish directory).
+Note the free plan sleeps after ~15 min of inactivity on this type.
 
-> Note: on Render's free plan the service sleeps after ~15 min of inactivity,
-> so the first visit after a pause takes a few extra seconds to boot.
+First build takes ~2 min (npm ci + Next.js compile + static export). You get a
+`https://<name>.onrender.com` URL.
 
 ## Project structure
 
@@ -74,6 +75,9 @@ src/
 public/
   gallery/web/         the 27 optimized frames (≤1600px, ~5 MB total)
 ```
+
+`npm run build` writes the deployable static site to `out/` (gitignored).
+To preview it locally: `python3 -m http.server -d out` or `npx serve out`.
 
 To rename a photo or rewrite its caption, edit `src/lib/gallery.ts` —
 titles, descriptions, tags and ordering all live there.

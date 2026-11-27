@@ -1,14 +1,17 @@
-# Render Blueprint — SHUT portfolio
-# Deploy: Render Dashboard → New → Blueprint → point at this repo.
+# Render Blueprint — SHUT portfolio (static site)
+# Deploy: Render Dashboard → New → Blueprint → pick this repo.
 services:
-  - type: web
+  - type: static
     name: shut-portfolio
-    runtime: node
-    plan: free
+    runtime: static
     buildCommand: npm ci && npm run build
-    startCommand: npm run start
+    staticPublishPath: ./out
     envVars:
       - key: NODE_VERSION
         value: 22.11.0
+    headers:
+      - path: /_next/static/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
     # No environment variables needed — the site is fully static,
     # no database, no secrets.
