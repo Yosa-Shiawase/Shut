@@ -1,0 +1,14 @@
+# Render Blueprint — SHUT portfolio
+# Deploy: Render Dashboard → New → Blueprint → point at this repo.
+services:
+  - type: web
+    name: shut-portfolio
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.11.0
+    # No environment variables needed — the site is fully static,
+    # no database, no secrets.
